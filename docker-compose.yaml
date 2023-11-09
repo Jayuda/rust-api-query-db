@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  api-exec-ha-0:
+    restart: always
+    container_name: api-exec-ha-0
+    ports:
+      - "0.0.0.0:801:8080"
+    build: .
+    image: api-exec-ha:latest
+    volumes:
+      - /home/DOCKER/NGINX/html/DATA-DB:/app/DATA
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "1"
+        max-size: "1m" 
+    deploy:
+      resources:
+        limits:
+          cpus: '5'
+          memory: 32g

@@ -1,0 +1,15 @@
+.env file contains the following variables:
+```
+EXEC_DB_USER=
+EXEC_DB_PASS=
+EXEC_DB_HOST=
+EXEC_DB_PORT=
+EXEC_DB_NAME=
+
+
+QUERY_DB_USER=
+QUERY_DB_PASS=
+QUERY_DB_HOST=
+QUERY_DB_PORT=
+QUERY_DB_NAME=
+```
